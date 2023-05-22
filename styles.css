@@ -37,7 +37,11 @@ section {
 }
 
 .arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
   width: 30px;
+  margin: 40px;
   transition: transform 0.3s ease;
   animation: arrowBounce 1s infinite alternate;
 }
@@ -91,6 +95,5 @@ section {
 }
 
 .container {
-  justify-content: flex-end;
-  align-items: flex-end;
+  position: relative;
 }
