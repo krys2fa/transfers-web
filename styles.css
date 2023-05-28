@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(".fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(".fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +40,6 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   transition: opacity 0.5s ease;
 }
 
@@ -61,6 +78,7 @@ section {
 .logos {
   padding: 10px;
   margin: 10px;
+  text-align: center;
 }
 
 .logo {
@@ -96,4 +114,72 @@ section {
 
 .container {
   position: relative;
+}
+
+.title {
+  display: flex;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin: 20px;
+}
+
+.nav {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  width: 350px;
+}
+
+.name {
+  margin-left: 50px;
+}
+
+.language {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.title-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  margin: auto 70px;
+  font-size: 40px;
+  width: 350px;
+}
+
+.info div:nth-child(1) {
+  font-weight: bold;
+}
+
+.info div:nth-child(2) {
+  font-size: 19px;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.nav div:nth-child(1) {
+  padding: 10px;
+  background-color: #7bbfee;
+  cursor: pointer;
+}
+
+.nav div:nth-child(2) {
+  padding: 10px;
+  background-color: #f7ab68;
+  cursor: pointer;
 }
