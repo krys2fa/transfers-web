@@ -183,3 +183,27 @@ section {
   background-color: #f7ab68;
   cursor: pointer;
 }
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+#nextBtn,
+#prevBtn {
+  height: 8%;
+  cursor: pointer;
+}
