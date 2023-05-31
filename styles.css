@@ -130,7 +130,6 @@ section {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  width: 350px;
 }
 
 .name {
@@ -139,9 +138,14 @@ section {
 
 .language {
   display: flex;
-  width: 100px;
-  justify-content: space-between;
+  justify-content: flex-end;
   cursor: pointer;
+  font-size: 20px;
+}
+
+.language div {
+  margin-left: 5px;
+  font-weight: 300;
 }
 
 .title-right {
