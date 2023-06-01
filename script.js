@@ -37,24 +37,63 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
+const itemsToShow = 3;
+let timer;
 
 function slideCarousel() {
-  const itemWidth = carouselItems[currentIndex].offsetWidth;
-  carousel.style.transform = `translateX(${-itemWidth * currentIndex}px)`;
+  const itemWidth = carouselItems[currentIndex].offsetWidth + 20;
+  const transformValue = -itemWidth * currentIndex;
+  carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
 function nextItem() {
-  currentIndex = (currentIndex + 1) % carouselItems.length;
-  slideCarousel();
+  currentIndex++;
+  if (currentIndex === carouselItems.length) {
+    currentIndex = 0;
+    carousel.style.transition = "none";
+    slideCarousel();
+  } else {
+    carousel.style.transition = "transform 0.3s ease-in-out";
+    slideCarousel();
+  }
 }
 
 function previousItem() {
-  currentIndex =
-    (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-  slideCarousel();
+  currentIndex--;
+  if (currentIndex === -1) {
+    currentIndex = carouselItems.length - 1;
+    carousel.style.transition = "none";
+    slideCarousel();
+  } else {
+    carousel.style.transition = "transform 0.3s ease-in-out";
+    slideCarousel();
+  }
 }
 
-prevBtn.addEventListener("click", previousItem);
-nextBtn.addEventListener("click", nextItem);
+function startCarouselTimer() {
+  timer = setInterval(() => {
+    nextItem();
+  }, 3000);
+}
 
-document.addEventListener("DOMContentLoaded", slideCarousel);
+function stopCarouselTimer() {
+  clearInterval(timer);
+}
+
+prevBtn.addEventListener("click", () => {
+  previousItem();
+  stopCarouselTimer();
+});
+
+nextBtn.addEventListener("click", () => {
+  nextItem();
+  stopCarouselTimer();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  slideCarousel();
+  startCarouselTimer();
+});
+
+carousel.addEventListener("mouseenter", stopCarouselTimer);
+carousel.addEventListener("mouseleave", startCarouselTimer);

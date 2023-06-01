@@ -154,9 +154,9 @@ section {
 }
 
 .info {
-  margin: auto 70px;
+  margin: auto 50px;
   font-size: 40px;
-  width: 350px;
+  width: 340px;
 }
 
 .info div:nth-child(1) {
@@ -199,15 +199,17 @@ section {
 }
 
 .carousel-item {
-  width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 calc(100% / 3); /* Set the width to accommodate three items */
   text-align: center;
+  margin: 0 10px; /* Add space between items */
   padding: 20px;
   background-color: lightgray;
 }
 
 #nextBtn,
 #prevBtn {
-  height: 8%;
+  height: 4%;
   cursor: pointer;
+  width: 20px;
+  margin: auto 10px;
 }
