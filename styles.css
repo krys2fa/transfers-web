@@ -22,12 +22,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f6f6f6;
 }
 
 body {
   font-family: "Lato", Arial, sans-serif;
   overflow-x: hidden;
+  background-image: url("./img/sackcloth-texture.jpeg"); /* Path to your sack cloth texture image */
+  background-repeat: repeat; /* Repeat the texture vertically and horizontally */
 }
 
 section {
@@ -35,6 +36,10 @@ section {
   display: flex;
   flex-direction: column;
   transition: opacity 0.5s ease;
+
+  background-color: #f6f2e9; /* Fallback background color */
+  background-image: url("./img/sackcloth-texture.jpeg"); /* Path to your sack cloth texture image */
+  background-repeat: repeat; /* Repeat the texture vertically and horizontally */
 }
 
 .section h2 {
@@ -182,7 +187,8 @@ section {
   text-align: center;
   margin: 0 10px; /* Add space between items */
   padding: 20px;
-  background-color: lightgray;
+  background-color: white;
+  height: 700px;
 }
 
 #nextBtn,
