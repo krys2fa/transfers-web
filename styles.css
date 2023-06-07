@@ -202,8 +202,14 @@ section {
 .english,
 .german {
   margin: 5px;
-  border: 1px solid transparent;
+  border-radius: 50%;
   /* border-width: 0; */
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Open Sans", Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 /* Button Styles */
@@ -256,4 +262,53 @@ section {
 .art-button span {
   position: relative;
   z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #ece5df;
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu-item {
+  padding: 8px 20px;
+}
+
+.submenu-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
