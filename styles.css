@@ -164,6 +164,10 @@ section {
   width: 100%;
 }
 
+.nav {
+  margin-left: auto;
+}
+
 .nav button:nth-child(1) {
   background-color: #7bbfee;
 }
@@ -286,6 +290,7 @@ section {
 
 .submenu {
   position: absolute;
+  z-index: 1;
   top: 100%;
   left: 0;
   width: 200px;
@@ -299,12 +304,21 @@ section {
 }
 
 .submenu-item {
-  padding: 8px 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.submenu-item:hover {
+  background-color: rgb(128, 126, 126);
 }
 
 .submenu-item a {
   color: #333;
   text-decoration: none;
+}
+
+.submenu-item a:hover {
+  color: #fff;
 }
 
 .dropdown:hover .submenu {
