@@ -192,7 +192,7 @@ section {
   margin: 0 10px; /* Add space between items */
   padding: 20px;
   background-color: white;
-  height: 700px;
+  height: 550px;
 }
 
 #nextBtn,
@@ -325,4 +325,50 @@ section {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+@media (max-width: 2560px) {
+  .carousel-item {
+    height: 1200px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  .info div:nth-child(2) {
+    font-weight: bold;
+  }
+
+  .menu-item a {
+    font-size: 20px;
+  }
+
+  li.menu-item.dropdown {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .carousel-item {
+    height: 550px;
+  }
+  /* .name {
+    margin: auto;
+  } */
+}
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    height: 360px;
+  }
+  .name {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
 }
