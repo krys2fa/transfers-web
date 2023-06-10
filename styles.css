@@ -181,11 +181,11 @@ section {
   margin: 5px;
 }
 
-.tamale {
+.rouge {
   background-color: #f7ab68;
 }
 
-.osnabruck {
+.blue {
   background-color: #7bbfee;
 }
 
@@ -217,11 +217,9 @@ section {
 .carousel-item span {
   text-align: left;
   padding: 10px 100px;
-
-  background-color: #7bbfee;
 }
 
-/* @keyframes carouselAnimation {
+@keyframes carouselAnimation {
   0%,
   20% {
     transform: translateX(0);
@@ -236,24 +234,6 @@ section {
   }
   75%,
   95% {
-    transform: translateX(-2100px);
-  }
-  100% {
-    transform: translateX(-2800px);
-  }
-} */
-
-@keyframes carouselAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-700px);
-  }
-  50% {
-    transform: translateX(-1400px);
-  }
-  75% {
     transform: translateX(-2100px);
   }
   100% {
