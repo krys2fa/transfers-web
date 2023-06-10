@@ -283,30 +283,6 @@ section {
   z-index: 1;
 }
 
-/* navbar {
-  padding: 20px 0;
-  text-align: center;
-}
-
-navbar ul {
-  list-style: none;
-}
-
-navbar ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-navbar ul li a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-} */
-/* 
-navbar ul li a:hover {
-  color: #00b4ff;
-} */
-
 nav ul {
   list-style: none;
 }

@@ -74,6 +74,10 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", scrollToSection);
 });
 
+const sectionLink = document.querySelector("#section");
+console.log("🚀 ~ file: script.js:78 ~ sectionLink:", sectionLink);
+sectionLink.addEventListener("click", scrollToSection);
+
 function scrollToSection(e) {
   e.preventDefault();
   const targetId = this.getAttribute("href");
