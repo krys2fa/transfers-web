@@ -351,6 +351,10 @@ section {
   padding-top: 60px; /* Adjust this value to fit your navigation bar height */
 }
 
+.name {
+  font-weight: 100;
+}
+
 @media (max-width: 2560px) {
   .carousel-item {
     height: 1200px;
@@ -361,7 +365,7 @@ section {
   }
 
   .info div:nth-child(2) {
-    font-weight: bold;
+    /* font-weight: 100; */
   }
 
   .menu-item a {
@@ -386,8 +390,13 @@ section {
     font-size: 60px;
   }
 
+  .info div a {
+    text-decoration: none;
+  }
+
   .info div:nth-child(2) {
     font-size: 24px;
+    /* font-weight: 100; */
   }
 
   #nextBtn,
