@@ -1,43 +1,11 @@
-// Add smooth scrolling to anchor links
-document.querySelectorAll(".section-link").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
-
-// Add fade-in effect to sections
-const sections = document.querySelectorAll(".section");
-const options = {
-  rootMargin: "0px",
-  threshold: 0.5,
-};
-
-const sectionObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-    } else {
-      entry.target.style.opacity = "0";
-    }
-  });
-}, options);
-
-sections.forEach((section) => {
-  sectionObserver.observe(section);
-});
-
+// Carousel functionality
 const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
-const itemsToShow = 3;
+const itemsToShow = 2;
 let timer;
 
 function slideCarousel() {
@@ -46,7 +14,7 @@ function slideCarousel() {
   carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
-function nextItem() {
+const nextItem = () => {
   currentIndex++;
   if (currentIndex === carouselItems.length) {
     currentIndex = 0;
@@ -56,9 +24,9 @@ function nextItem() {
     carousel.style.transition = "transform 0.3s ease-in-out";
     slideCarousel();
   }
-}
+};
 
-function previousItem() {
+const previousItem = () => {
   currentIndex--;
   if (currentIndex === -1) {
     currentIndex = carouselItems.length - 1;
@@ -68,17 +36,17 @@ function previousItem() {
     carousel.style.transition = "transform 0.3s ease-in-out";
     slideCarousel();
   }
-}
+};
 
-function startCarouselTimer() {
+const startCarouselTimer = () => {
   timer = setInterval(() => {
     nextItem();
   }, 3000);
-}
+};
 
-function stopCarouselTimer() {
+const stopCarouselTimer = () => {
   clearInterval(timer);
-}
+};
 
 prevBtn.addEventListener("click", () => {
   previousItem();
@@ -97,14 +65,85 @@ document.addEventListener("DOMContentLoaded", () => {
 
 carousel.addEventListener("mouseenter", stopCarouselTimer);
 carousel.addEventListener("mouseleave", startCarouselTimer);
-const dropdowns = document.querySelectorAll(".dropdown");
 
-dropdowns.forEach((dropdown) => {
-  dropdown.addEventListener("mouseenter", () => {
-    dropdown.classList.add("active");
-  });
+// Scroll functionality
+const menuLinks = document.querySelectorAll("nav ul li a");
+const sections = document.querySelectorAll("section");
 
-  dropdown.addEventListener("mouseleave", () => {
-    dropdown.classList.remove("active");
-  });
+menuLinks.forEach((link) => {
+  link.addEventListener("click", scrollToSection);
 });
+
+function scrollToSection(e) {
+  e.preventDefault();
+  const targetId = this.getAttribute("href");
+  const targetSection = document.querySelector(targetId);
+
+  const offsetTop = targetSection.offsetTop;
+  const scrollOptions = {
+    top: offsetTop,
+    behavior: "smooth",
+  };
+
+  if ("scrollBehavior" in document.documentElement.style) {
+    // Use smooth scrolling if supported
+    window.scrollTo(scrollOptions);
+  } else {
+    // Use a polyfill for smooth scrolling
+    smoothScrollTo(offsetTop, 800);
+  }
+}
+
+function smoothScrollTo(to, duration) {
+  const start = window.pageYOffset;
+  const change = to - start;
+  const increment = 20;
+  let currentTime = 0;
+
+  function animateScroll() {
+    currentTime += increment;
+    const val = Math.easeInOutQuad(currentTime, start, change, duration);
+    window.scrollTo(0, val);
+
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment);
+    }
+  }
+
+  animateScroll();
+}
+
+// Easing equation for smooth scrolling
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d / 2;
+  if (t < 1) return (c / 2) * t * t + b;
+  t--;
+  return (-c / 2) * (t * (t - 2) - 1) + b;
+};
+
+// Add 'active' class to the menu item corresponding to the current section
+function setActiveMenuItem() {
+  const sections = document.querySelectorAll("section");
+  const menuLinks = document.querySelectorAll("nav ul li a");
+
+  sections.forEach((section) => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+
+    if (
+      window.pageYOffset >= top - 60 &&
+      window.pageYOffset < top + height - 60
+    ) {
+      const targetLink = document.querySelector(
+        `nav ul li a[href="#${section.id}"]`
+      );
+      menuLinks.forEach((link) =>
+        link.parentElement.classList.remove("active")
+      );
+      targetLink.parentElement.classList.add("active");
+    }
+  });
+}
+
+// Listen for scroll events and update the active menu item
+window.addEventListener("scroll", setActiveMenuItem);
