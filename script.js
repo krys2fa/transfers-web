@@ -1,11 +1,11 @@
 // Carousel functionality
 const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+// const prevBtn = document.getElementById("prevBtn");
+// const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
-const itemsToShow = 2;
+const itemsToShow = 1;
 let timer;
 
 function slideCarousel() {
@@ -14,29 +14,29 @@ function slideCarousel() {
   carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
-const nextItem = () => {
-  currentIndex++;
-  if (currentIndex === carouselItems.length) {
-    currentIndex = 0;
-    carousel.style.transition = "none";
-    slideCarousel();
-  } else {
-    carousel.style.transition = "transform 0.3s ease-in-out";
-    slideCarousel();
-  }
-};
+// const nextItem = () => {
+//   currentIndex++;
+//   if (currentIndex === carouselItems.length) {
+//     currentIndex = 0;
+//     carousel.style.transition = "none";
+//     slideCarousel();
+//   } else {
+//     carousel.style.transition = "transform 0.3s ease-in-out";
+//     slideCarousel();
+//   }
+// };
 
-const previousItem = () => {
-  currentIndex--;
-  if (currentIndex === -1) {
-    currentIndex = carouselItems.length - 1;
-    carousel.style.transition = "none";
-    slideCarousel();
-  } else {
-    carousel.style.transition = "transform 0.3s ease-in-out";
-    slideCarousel();
-  }
-};
+// const previousItem = () => {
+//   currentIndex--;
+//   if (currentIndex === -1) {
+//     currentIndex = carouselItems.length - 1;
+//     carousel.style.transition = "none";
+//     slideCarousel();
+//   } else {
+//     carousel.style.transition = "transform 0.3s ease-in-out";
+//     slideCarousel();
+//   }
+// };
 
 const startCarouselTimer = () => {
   timer = setInterval(() => {
@@ -48,20 +48,20 @@ const stopCarouselTimer = () => {
   clearInterval(timer);
 };
 
-prevBtn.addEventListener("click", () => {
-  previousItem();
-  stopCarouselTimer();
-});
+// prevBtn.addEventListener("click", () => {
+//   previousItem();
+//   stopCarouselTimer();
+// });
 
-nextBtn.addEventListener("click", () => {
-  nextItem();
-  stopCarouselTimer();
-});
+// nextBtn.addEventListener("click", () => {
+//   nextItem();
+//   stopCarouselTimer();
+// });
 
-document.addEventListener("DOMContentLoaded", () => {
-  slideCarousel();
-  startCarouselTimer();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   slideCarousel();
+//   startCarouselTimer();
+// });
 
 carousel.addEventListener("mouseenter", stopCarouselTimer);
 carousel.addEventListener("mouseleave", startCarouselTimer);
