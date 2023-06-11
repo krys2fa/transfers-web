@@ -229,58 +229,6 @@ section {
   padding: auto;
 }
 
-/* Button Styles */
-/* .button {
-  display: inline-block;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #ffdbcc;
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-
-/* Artistic Button Styles */
-/* .art-button {
-  background-color: #f6f6f6;
-  color: #555; */
-/* border: 1px solid #ccc; */
-/* } */
-
-/* .art-button:hover {
-  background-color: #eee;
-} */
-
-/* .art-button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.2)
-  );
-  z-index: -1;
-}
-
-.art-button span {
-  position: relative;
-  z-index: 1;
-} */
-
 nav {
   position: fixed;
   left: 0;
@@ -359,7 +307,86 @@ section {
   display: flex;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
+  .carousel-container {
+    width: 65%;
+  }
+
+  .name {
+    font-size: 80px;
+  }
+
+  .date {
+    font-size: 35px;
+  }
+
+  .place a {
+    font-size: 35px;
+    padding: 10px 5px;
+  }
+
+  nav ul li a {
+    font-size: 35px;
+  }
+
+  nav ul.first-column {
+    margin-left: 100px;
+  }
+
+  nav ul.second-column {
+    margin-left: 85px;
+  }
+
+  .content {
+    margin-left: 600px;
+  }
+
+  .title span:nth-child(1) {
+    margin-left: 420px;
+    font-size: 100px;
+  }
+
+  .carousel-container {
+    width: 65%;
+  }
+  /* 
+  .text {
+    margin-left: 600px;
+    margin-right: 300px;
+    margin-top: 125px;
+    font-size: 25px;
+  } */
+
+  .text {
+    margin-left: 800px;
+    margin-right: 40px;
+    margin-top: 125px;
+    font-size: 35px;
+  }
+
+  .text p {
+    font-size: 35px;
+  }
+
+  .text-box {
+    font-size: 25px;
+  }
+
+  .social {
+    margin-right: 100px;
+    margin-top: 40px;
+  }
+
+  .carousel-item img {
+    height: 650px;
+  }
+
+  .language div {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 2559px) {
   .name {
     font-size: 50px;
   }
@@ -424,36 +451,6 @@ section {
   .language div {
     font-size: 18px;
   }
-}
-
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  nav ul.second-column {
-    margin-left: 45px;
-  }
-
-  .content {
-    margin-left: 70px;
-  }
-
-  .title span:nth-child(1) {
-    margin-left: 168px;
-  }
-
-  .carousel-container {
-    width: 70%;
-  }
-
-  .text {
-    margin-left: 335px;
-    margin-right: 100px;
-  }
-
-  .social {
-    margin-right: 100px;
-  }
-}
-
-@media (max-width: 1024px) {
 }
 
 @media (max-width: 768px) {
