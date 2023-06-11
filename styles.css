@@ -120,6 +120,7 @@ section {
 
 .title span:nth-child(1) {
   letter-spacing: 10px;
+  margin-right: 45px;
 }
 
 .text {
@@ -172,13 +173,11 @@ section {
 
 .osnabruck,
 .tamale {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   cursor: pointer;
-  margin: 5px;
+  margin: 5px 5px 10px 0px;
+  padding: 5px 1px;
 }
 
 .rouge {
@@ -322,6 +321,11 @@ nav ul {
 
 nav ul.second-column {
   margin-left: 20px;
+  text-align: left;
+}
+
+nav ul.first-column {
+  text-align: right;
 }
 
 nav ul li {
@@ -362,13 +366,13 @@ section {
 .name {
   font-weight: 100;
   display: flex;
-  font-size: 40px;
+  font-size: 25px;
   font-family: "Open Sans", sans-serif;
 }
 
 .content {
   width: 100%;
-  margin: 20px;
+  margin: 20px 35px 5px;
 }
 
 .date {
