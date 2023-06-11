@@ -403,6 +403,30 @@ section {
 }
 
 @media (max-width: 1440px) {
+  nav ul.second-column {
+    margin-left: 45px;
+  }
+
+  .content {
+    margin-left: 70px;
+  }
+
+  .title span:nth-child(1) {
+    margin-left: 168px;
+  }
+
+  .carousel-container {
+    width: 70%;
+  }
+
+  .text {
+    margin-left: 335px;
+    margin-right: 80px;
+  }
+
+  .social {
+    margin-right: 100px;
+  }
 }
 
 @media (max-width: 1024px) {
