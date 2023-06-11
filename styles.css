@@ -30,7 +30,6 @@ body {
 }
 
 section {
-  /* height: 100vh; */
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -46,28 +45,6 @@ section {
 .section p {
   font-size: 18px;
   margin-bottom: 40px;
-}
-
-.arrow {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 30px;
-  margin: 40px;
-  transition: transform 0.3s ease;
-  animation: arrowBounce 1s infinite alternate;
-}
-
-@keyframes arrowBounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .logos {
@@ -126,6 +103,7 @@ section {
 .text {
   margin-left: 302px;
   margin-right: 40px;
+  margin-top: 80px;
   text-align: justify;
 }
 
@@ -148,24 +126,6 @@ section {
 .social {
   margin-right: 15px;
   margin-bottom: 15px;
-}
-
-.info {
-  margin: auto 50px;
-  font-size: 40px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-}
-
-.info div:nth-child(1) {
-  font-weight: bold;
-}
-
-.info div:nth-child(2) {
-  font-size: 16px;
-}
-
-.info div:nth-child(1) a {
-  color: #333;
 }
 
 .banner {
@@ -270,7 +230,7 @@ section {
 }
 
 /* Button Styles */
-.button {
+/* .button {
   display: inline-block;
   padding: 12px 24px;
   border: none;
@@ -288,20 +248,20 @@ section {
   background-color: #ffdbcc;
   color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Artistic Button Styles */
-.art-button {
+/* .art-button {
   background-color: #f6f6f6;
-  color: #555;
-  /* border: 1px solid #ccc; */
-}
+  color: #555; */
+/* border: 1px solid #ccc; */
+/* } */
 
-.art-button:hover {
+/* .art-button:hover {
   background-color: #eee;
-}
+} */
 
-.art-button:before {
+/* .art-button:before {
   content: "";
   position: absolute;
   top: 0;
@@ -319,7 +279,7 @@ section {
 .art-button span {
   position: relative;
   z-index: 1;
-}
+} */
 
 nav {
   position: fixed;
@@ -399,10 +359,74 @@ section {
   display: flex;
 }
 
-@media (max-width: 2560px) {
+@media only screen and (max-width: 1440px) and (min-width: 2560px) {
+  .name {
+    font-size: 50px;
+  }
+
+  .date {
+    font-size: 25px;
+  }
+
+  .place a {
+    font-size: 25px;
+    padding: 10px 5px;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+  }
+
+  nav ul.first-column {
+    margin-left: 100px;
+  }
+
+  nav ul.second-column {
+    margin-left: 45px;
+  }
+
+  .content {
+    margin-left: 300px;
+  }
+
+  .title span:nth-child(1) {
+    margin-left: 326px;
+    font-size: 60px;
+  }
+
+  .carousel-container {
+    width: 52%;
+  }
+
+  .text {
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 125px;
+    font-size: 25px;
+  }
+
+  .text p {
+    font-size: 25px;
+  }
+
+  .text-box {
+    font-size: 25px;
+  }
+
+  .social {
+    margin-right: 650px;
+  }
+
+  .carousel-item img {
+    height: 450px;
+  }
+
+  .language div {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
   nav ul.second-column {
     margin-left: 45px;
   }
@@ -421,7 +445,7 @@ section {
 
   .text {
     margin-left: 335px;
-    margin-right: 80px;
+    margin-right: 100px;
   }
 
   .social {
