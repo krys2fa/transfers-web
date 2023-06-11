@@ -349,13 +349,6 @@ section {
   .carousel-container {
     width: 65%;
   }
-  /* 
-  .text {
-    margin-left: 600px;
-    margin-right: 300px;
-    margin-top: 125px;
-    font-size: 25px;
-  } */
 
   .text {
     margin-left: 800px;
@@ -369,7 +362,8 @@ section {
   }
 
   .text-box {
-    font-size: 25px;
+    font-size: 35px;
+    margin-bottom: 100px;
   }
 
   .social {
@@ -453,7 +447,19 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .text-box {
+    font-size: 15px;
+  }
+
+  .carousel-container {
+    width: 445px;
+  }
+
+  .carousel-item span {
+    padding: 10px 0px;
+    margin-right: 115px;
+  }
 }
 
 @media (max-width: 320px) {
