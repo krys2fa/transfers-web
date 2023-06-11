@@ -115,12 +115,12 @@ section {
   display: flex;
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .title span:nth-child(1) {
   letter-spacing: 10px;
-  margin-right: 45px;
+  margin-left: 300px;
 }
 
 .text {
@@ -143,6 +143,11 @@ section {
   font-size: 15px;
   font-weight: 300;
   margin: auto 5px;
+}
+
+.social {
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .info {
@@ -237,6 +242,19 @@ section {
   100% {
     transform: translateX(-2800px);
   }
+}
+
+.uk-icon-button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #eee;
+  line-height: 35px;
+  color: #444;
+  font-size: 18px;
+  text-align: center;
 }
 
 .carousel-item img {
