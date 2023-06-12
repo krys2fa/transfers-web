@@ -353,11 +353,6 @@ section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* .text {
-    margin-left: 595px;
-    margin-right: 200px;
-  } */
-
   .container {
     margin: 0 auto;
   }
