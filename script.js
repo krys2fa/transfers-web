@@ -1,8 +1,6 @@
 // Carousel functionality
 const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
-// const prevBtn = document.getElementById("prevBtn");
-// const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
 const itemsToShow = 1;
@@ -14,30 +12,6 @@ function slideCarousel() {
   carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
-// const nextItem = () => {
-//   currentIndex++;
-//   if (currentIndex === carouselItems.length) {
-//     currentIndex = 0;
-//     carousel.style.transition = "none";
-//     slideCarousel();
-//   } else {
-//     carousel.style.transition = "transform 0.3s ease-in-out";
-//     slideCarousel();
-//   }
-// };
-
-// const previousItem = () => {
-//   currentIndex--;
-//   if (currentIndex === -1) {
-//     currentIndex = carouselItems.length - 1;
-//     carousel.style.transition = "none";
-//     slideCarousel();
-//   } else {
-//     carousel.style.transition = "transform 0.3s ease-in-out";
-//     slideCarousel();
-//   }
-// };
-
 const startCarouselTimer = () => {
   timer = setInterval(() => {
     nextItem();
@@ -48,26 +22,11 @@ const stopCarouselTimer = () => {
   clearInterval(timer);
 };
 
-// prevBtn.addEventListener("click", () => {
-//   previousItem();
-//   stopCarouselTimer();
-// });
-
-// nextBtn.addEventListener("click", () => {
-//   nextItem();
-//   stopCarouselTimer();
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   slideCarousel();
-//   startCarouselTimer();
-// });
-
 carousel.addEventListener("mouseenter", stopCarouselTimer);
 carousel.addEventListener("mouseleave", startCarouselTimer);
 
 // Scroll functionality
-const menuLinks = document.querySelectorAll("nav ul li a");
+const menuLinks = document.querySelectorAll(".nav ul li a");
 const sections = document.querySelectorAll("section");
 
 menuLinks.forEach((link) => {
@@ -75,7 +34,6 @@ menuLinks.forEach((link) => {
 });
 
 const sectionLink = document.querySelector("#section");
-console.log("🚀 ~ file: script.js:78 ~ sectionLink:", sectionLink);
 sectionLink.addEventListener("click", scrollToSection);
 
 function scrollToSection(e) {
