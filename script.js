@@ -86,7 +86,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 // Add 'active' class to the menu item corresponding to the current section
 function setActiveMenuItem() {
   const sections = document.querySelectorAll("section");
-  const menuLinks = document.querySelectorAll("nav ul li a");
+  const menuLinks = document.querySelectorAll(".nav ul li a");
 
   sections.forEach((section) => {
     const top = section.offsetTop;
