@@ -326,7 +326,9 @@ section {
     font-size: 25px;
   }
 
-  .text-box {
+  .text-box,
+  .date,
+  .place a {
     font-size: 25px;
   }
 }
