@@ -60,17 +60,15 @@ section {
 .grid {
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 10px;
 }
 
 .text-box {
-  text-align: justify;
-  font-size: 18px;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
 }
 
 .container {
-  margin: 0 50px;
+  margin: 0 auto;
 }
 
 .title {
@@ -374,85 +372,21 @@ section {
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
-  .carousel-container {
-    width: 96%;
-  }
-
-  .name {
-    font-size: 50px;
-  }
-
-  .date {
-    font-size: 25px;
-  }
-
-  .place a {
-    font-size: 25px;
-    padding: 10px 5px;
-  }
-
-  nav ul li a {
-    font-size: 25px;
-  }
-
-  nav ul.first-column {
-    margin-left: 100px;
-  }
-
-  nav ul.second-column {
-    margin-left: 45px;
-  }
-
-  .content {
-    margin-left: 300px;
-  }
-
-  .title span:nth-child(1) {
-    margin-left: 326px;
-    font-size: 60px;
-  }
-
-  .carousel-container {
-    width: 62%;
-  }
-
   .text {
-    margin-left: 600px;
-    margin-top: 125px;
-    font-size: 25px;
-    margin-right: 25px;
+    margin-left: 595px;
+    margin-right: 200px;
   }
 
-  .text p {
-    font-size: 25px;
+  .container {
+    margin: 0 150px;
   }
 
-  .text-box {
-    font-size: 25px;
+  .news {
+    margin-left: 400px;
   }
 
-  .social {
-    margin-right: 15px;
-  }
-
-  .carousel-item img {
-    height: 450px;
-  }
-
-  .carousel-item span {
-    padding: 10px 60px;
-  }
-
-  .language div {
-    font-size: 18px;
-  }
-
-  .language {
-    margin-left: 301px;
-  }
-
-  .social {
-    margin-top: 8px;
+  .carousel-container {
+    width: 735px;
   }
 }
 
