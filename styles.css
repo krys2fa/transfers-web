@@ -293,7 +293,7 @@ section {
 }
 
 @media only screen and (min-width: 2560px) {
-  .uk-icon-button {
+  /* .uk-icon-button {
     width: 80px;
     height: 80px;
     line-height: 85px;
@@ -368,6 +368,40 @@ section {
 
   .language div {
     font-size: 28px;
+  } */
+
+  .text {
+    margin-left: 595px;
+    margin-right: 200px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .news {
+    margin-left: 400px;
+  }
+
+  .carousel-container {
+    width: 735px;
+  }
+
+  .name {
+    font-size: 35px;
+  }
+
+  .nav ul li {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    margin-left: 1100px;
+    margin-right: 715px;
   }
 }
 
@@ -378,7 +412,7 @@ section {
   }
 
   .container {
-    margin: 0 150px;
+    margin: 0 auto;
   }
 
   .news {
