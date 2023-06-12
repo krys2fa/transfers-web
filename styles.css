@@ -459,6 +459,14 @@ section {
   .language div {
     font-size: 18px;
   }
+
+  .language {
+    margin-left: 301px;
+  }
+
+  .social {
+    margin-top: 8px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
