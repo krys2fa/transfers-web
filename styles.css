@@ -308,6 +308,12 @@ section {
 }
 
 @media only screen and (min-width: 2560px) {
+  .uk-icon-button {
+    width: 80px;
+    height: 80px;
+    line-height: 85px;
+  }
+
   .carousel-container {
     width: 65%;
   }
@@ -367,7 +373,7 @@ section {
   }
 
   .social {
-    margin-right: 100px;
+    margin-right: 33px;
     margin-top: 40px;
   }
 
@@ -380,7 +386,11 @@ section {
   }
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 2559px) {
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .carousel-container {
+    width: 96%;
+  }
+
   .name {
     font-size: 50px;
   }
@@ -416,14 +426,14 @@ section {
   }
 
   .carousel-container {
-    width: 52%;
+    width: 62%;
   }
 
   .text {
     margin-left: 600px;
-    margin-right: 600px;
     margin-top: 125px;
     font-size: 25px;
+    margin-right: 25px;
   }
 
   .text p {
@@ -435,11 +445,15 @@ section {
   }
 
   .social {
-    margin-right: 650px;
+    margin-right: 15px;
   }
 
   .carousel-item img {
     height: 450px;
+  }
+
+  .carousel-item span {
+    padding: 10px 60px;
   }
 
   .language div {
@@ -448,17 +462,17 @@ section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .text-box {
-    font-size: 15px;
+  .carousel-container {
+    width: 60%;
   }
 
-  .carousel-container {
-    width: 445px;
+  .text {
+    margin-right: 20px;
   }
 
   .carousel-item span {
-    padding: 10px 0px;
-    margin-right: 115px;
+    padding: 10px;
+    margin-right: 98px;
   }
 }
 
