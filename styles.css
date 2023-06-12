@@ -253,6 +253,10 @@ section {
   color: #0f0f0f;
 }
 
+.active {
+  color: #0f0f0f;
+}
+
 .news {
   margin-left: 325px;
 }

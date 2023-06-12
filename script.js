@@ -33,9 +33,6 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", scrollToSection);
 });
 
-const sectionLink = document.querySelector("#section");
-sectionLink.addEventListener("click", scrollToSection);
-
 function scrollToSection(e) {
   e.preventDefault();
   const targetId = this.getAttribute("href");
@@ -97,7 +94,7 @@ function setActiveMenuItem() {
       window.pageYOffset < top + height - 60
     ) {
       const targetLink = document.querySelector(
-        `nav ul li a[href="#${section.id}"]`
+        `.nav ul li a[href="#${section.id}"]`
       );
       menuLinks.forEach((link) =>
         link.parentElement.classList.remove("active")
