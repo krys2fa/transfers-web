@@ -353,17 +353,21 @@ section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* .text {
+    margin-left: 595px;
+    margin-right: 200px;
+  } */
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .news {
+    margin-left: 300px;
+  }
+
   .carousel-container {
-    width: 60%;
-  }
-
-  .text {
-    margin-right: 20px;
-  }
-
-  .carousel-item span {
-    padding: 10px;
-    margin-right: 98px;
+    width: 405px;
   }
 }
 
