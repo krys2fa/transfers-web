@@ -370,5 +370,39 @@ section {
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .text {
+    margin: 20px;
+  }
+
+  .news {
+    margin-left: 0px;
+  }
+
+  .title {
+    font-size: 22px;
+    display: none;
+  }
+
+  .carousel-item {
+    width: 50px;
+  }
+
+  .container {
+    margin: 0 10px;
+  }
+
+  .carousel-container {
+    width: 300px;
+  }
+  .carousel-item span {
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 261px;
+  }
 }

@@ -106,3 +106,33 @@ function setActiveMenuItem() {
 
 // Listen for scroll events and update the active menu item
 window.addEventListener("scroll", setActiveMenuItem);
+
+// Get all the menu items
+const menuItems = document.querySelectorAll("nav ul li a");
+
+// Add scroll event listener
+window.addEventListener("scroll", () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  // Loop through each section and check if it's in the viewport
+  document.querySelectorAll("section").forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
+
+    if (
+      scrollPosition >= sectionTop &&
+      scrollPosition < sectionTop + sectionHeight
+    ) {
+      // Add the active class to the corresponding menu item
+      menuItems.forEach((menuItem) => {
+        if (menuItem.getAttribute("href") === `#${sectionId}`) {
+          menuItem.classList.add("active");
+        } else {
+          menuItem.classList.remove("active");
+        }
+      });
+    }
+  });
+});
