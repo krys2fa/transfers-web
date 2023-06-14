@@ -92,7 +92,7 @@ section {
 }
 
 .text {
-  margin-left: 370px;
+  margin-left: 450px;
   margin-right: 40px;
   margin-top: 80px;
   text-align: justify;
@@ -115,7 +115,6 @@ section {
 }
 
 .social {
-  /* margin-right: 15px; */
   margin-bottom: 15px;
 }
 
@@ -129,7 +128,7 @@ section {
   font-size: 16px;
   cursor: pointer;
   margin: 10px 0px;
-  padding: 5px 1px;
+  padding: 5px 10px;
 }
 
 .rouge {
@@ -156,17 +155,21 @@ section {
 .carousel-item {
   flex: 0 0 700px;
   width: 700px;
-  background-color: #ccc;
   margin-right: 20px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
 }
 
-.carousel-item span {
+.image {
+  display: block;
+}
+
+.carousel-item div {
   text-align: left;
-  padding: 10px 100px;
+  padding: 10px;
+  font-size: 10px;
 }
 
 @keyframes carouselAnimation {
@@ -207,13 +210,6 @@ section {
 .carousel-item img {
   width: 700px;
   height: 300px;
-}
-
-.carousel-item p {
-  color: #333;
-  text-align: left;
-  background-color: #7bbfee;
-  padding: auto;
 }
 
 .nav {
@@ -258,7 +254,7 @@ section {
 }
 
 .news {
-  margin-left: 325px;
+  margin-left: 390px;
 }
 
 section {
@@ -339,7 +335,7 @@ section {
 
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
   .text {
-    margin-left: 595px;
+    margin-left: 550px;
     margin-right: 200px;
   }
 
@@ -361,12 +357,18 @@ section {
     margin: 0 auto;
   }
 
-  .news {
-    margin-left: 300px;
+  .news,
+  .text {
+    margin-left: 350px;
   }
 
   .carousel-container {
     width: 405px;
+  }
+
+  .carousel-item div {
+    text-align: left;
+    font-size: 8px;
   }
 }
 
@@ -399,10 +401,10 @@ section {
   .carousel-container {
     width: 300px;
   }
-  .carousel-item span {
+
+  .carousel-item div {
     text-align: left;
     padding: 10px;
-    font-size: 15px;
-    margin-right: 261px;
+    font-size: 6px;
   }
 }
