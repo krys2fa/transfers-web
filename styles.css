@@ -122,6 +122,17 @@ section {
   margin: 20px 0px;
 }
 
+/* .text div {
+  color: #8d8893;
+} */
+
+.event {
+  background-color: #8d8893;
+  padding: 5px;
+  margin: 15px 0px;
+  color: #fff;
+}
+
 .language {
   display: flex;
   margin-right: 20px;
