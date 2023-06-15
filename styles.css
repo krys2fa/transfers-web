@@ -217,6 +217,7 @@ section {
   height: 100vh;
   margin: 20px;
   display: flex;
+  left: 10px;
 }
 
 .nav ul {
