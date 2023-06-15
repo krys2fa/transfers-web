@@ -133,6 +133,12 @@ section {
   color: #fff;
 }
 
+.profile {
+  margin: 0px 20px;
+  width: 200px;
+  height: 200px;
+}
+
 .language {
   display: flex;
   margin-right: 20px;
