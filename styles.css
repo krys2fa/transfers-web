@@ -122,14 +122,14 @@ section {
   margin: 20px 0px;
 }
 
-/* .text div {
-  color: #8d8893;
-} */
+.eventdiv {
+  margin: 15px 20px;
+}
 
 .event {
   background-color: #8d8893;
   padding: 5px;
-  margin: 15px 0px;
+  margin: 15px 20px;
   color: #fff;
 }
 
@@ -369,6 +369,10 @@ section {
   .text {
     margin-left: 550px;
     margin-right: 200px;
+  }
+
+  .map {
+    width: 340px;
   }
 
   .container {
