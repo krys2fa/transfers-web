@@ -99,7 +99,16 @@ section {
 }
 
 .text p {
+  color: #8f8e8e;
+}
+
+.bold {
+  /* font-weight: 300; */
+  font-size: 18px;
+  /* font-family: "Open Sans", sans-serif;
+  font-size: 17px; */
   color: #333;
+  /* text-align: left; */
 }
 
 .language {
