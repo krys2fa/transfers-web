@@ -7,9 +7,11 @@ const itemsToShow = 1;
 let timer;
 
 function slideCarousel() {
-  const itemWidth = carouselItems[currentIndex].offsetWidth + 20;
-  const transformValue = -itemWidth * currentIndex;
-  carousel.style.transform = `translateX(${transformValue}px)`;
+  if (carousel) {
+    const itemWidth = carouselItems[currentIndex].offsetWidth + 20;
+    const transformValue = -itemWidth * currentIndex;
+    carousel.style.transform = `translateX(${transformValue}px)`;
+  }
 }
 
 const startCarouselTimer = () => {
@@ -22,8 +24,10 @@ const stopCarouselTimer = () => {
   clearInterval(timer);
 };
 
-carousel.addEventListener("mouseenter", stopCarouselTimer);
-carousel.addEventListener("mouseleave", startCarouselTimer);
+if (carousel) {
+  carousel.addEventListener("mouseenter", stopCarouselTimer);
+  carousel.addEventListener("mouseleave", startCarouselTimer);
+}
 
 // Scroll functionality
 const menuLinks = document.querySelectorAll(".nav ul li a");
@@ -36,20 +40,25 @@ menuLinks.forEach((link) => {
 function scrollToSection(e) {
   e.preventDefault();
   const targetId = this.getAttribute("href");
-  const targetSection = document.querySelector(targetId);
 
-  const offsetTop = targetSection.offsetTop;
-  const scrollOptions = {
-    top: offsetTop,
-    behavior: "smooth",
-  };
+  if (targetId.startsWith("#") === true) {
+    const targetSection = document.querySelector(targetId);
 
-  if ("scrollBehavior" in document.documentElement.style) {
-    // Use smooth scrolling if supported
-    window.scrollTo(scrollOptions);
+    const offsetTop = targetSection.offsetTop;
+    const scrollOptions = {
+      top: offsetTop,
+      behavior: "smooth",
+    };
+
+    if ("scrollBehavior" in document.documentElement.style) {
+      // Use smooth scrolling if supported
+      window.scrollTo(scrollOptions);
+    } else {
+      // Use a polyfill for smooth scrolling
+      smoothScrollTo(offsetTop, 800);
+    }
   } else {
-    // Use a polyfill for smooth scrolling
-    smoothScrollTo(offsetTop, 800);
+    window.location.href = targetId;
   }
 }
 
