@@ -88,11 +88,11 @@ section {
 
 .title span:nth-child(1) {
   letter-spacing: 10px;
-  margin-left: 185px;
+  margin-left: 215px;
 }
 
 .text {
-  margin-left: 450px;
+  margin-left: 415px;
   margin-right: 40px;
   margin-top: 80px;
   text-align: justify;
@@ -254,7 +254,7 @@ section {
   height: 100vh;
   margin: 20px;
   display: flex;
-  left: 10px;
+  left: 35px;
 }
 
 .nav ul {
@@ -391,6 +391,14 @@ section {
 
   .carousel-container {
     width: 735px;
+  }
+
+  .title span:nth-child(1) {
+    margin-left: 225px;
+  }
+
+  .nav {
+    left: 180px;
   }
 }
 
