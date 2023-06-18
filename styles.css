@@ -374,7 +374,7 @@ section {
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
   .text {
     margin-left: 550px;
-    margin-right: 200px;
+    margin-right: 160px;
   }
 
   .map {
@@ -399,6 +399,17 @@ section {
 
   .nav {
     left: 180px;
+  }
+
+  .mahama {
+    margin-top: -70px;
+  }
+
+  .profile {
+    display: flex;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    justify-content: space-around;
   }
 }
 
