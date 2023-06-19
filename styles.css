@@ -42,7 +42,8 @@ section {
 
 .title,
 .language,
-.social {
+.social,
+.news {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +61,31 @@ section {
 }
 
 .social {
+}
+
+.news {
+  flex-direction: column;
+}
+
+.osnabruck,
+.tamale {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0px;
+  padding: 5px 10px;
+}
+
+.rouge {
+  background-color: #f7ab68;
+}
+
+.blue {
+  background-color: #7bbfee;
+}
+
+.place {
+  padding: 10px;
 }
 
 .uk-icon-button {
