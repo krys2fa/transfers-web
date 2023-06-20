@@ -186,7 +186,7 @@ section {
 }
 
 .carousel {
-  height: 200px;
+  height: fit-content;
   display: flex;
   width: 300px;
   animation: carouselAnimation 20s infinite;
