@@ -97,6 +97,63 @@ section {
 }
 
 .hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.hamburger .icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.map {
+  width: 280px;
+  margin: 10px auto;
+}
+
+.text {
+  margin: 20px;
+  text-align: justify;
+}
+
+/* .hamburger {
   display: none;
   cursor: pointer;
   position: relative;
@@ -114,9 +171,9 @@ section {
   height: 2px;
   width: 100%;
   transition: transform 0.3s ease-in-out;
-}
+} */
 
-.hamburger .icon::before,
+/* .hamburger .icon::before,
 .hamburger .icon::after {
   top: 0;
 }
@@ -139,9 +196,9 @@ section {
 
 .hamburger.active .icon::after {
   transform: translateY(0) rotate(-95deg);
-}
+} */
 
-.menu {
+/* .menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +218,7 @@ section {
 
 .menu li a:hover {
   color: #333;
-}
+} */
 
 .carousel-container {
   width: 100%;
