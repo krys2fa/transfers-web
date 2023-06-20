@@ -22,6 +22,11 @@ function slideCarousel() {
   }
 }
 
+function nextItem() {
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  slideCarousel();
+}
+
 const startCarouselTimer = () => {
   timer = setInterval(() => {
     nextItem();
