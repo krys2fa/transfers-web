@@ -34,9 +34,17 @@ if (carousel) {
   carousel.addEventListener("mouseleave", startCarouselTimer);
 }
 
-var hamburgerMenu = document.querySelector(".hamburger-menu");
-var menu = document.querySelector(".menu");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const menu = document.querySelector(".menu");
+const menuLinks = document.querySelectorAll(".menu a");
+console.log("🚀 ~ file: script.js:39 ~ menu:", menu);
 
 hamburgerMenu.addEventListener("click", function () {
   menu.classList.toggle("open");
+});
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    menu.classList.toggle("open");
+  });
 });
