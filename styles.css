@@ -357,8 +357,7 @@ section {
   }
 
   .news {
-    justify-content: left;
-    align-items: left;
+    align-items: flex-start;
     margin: 0px;
   }
 
