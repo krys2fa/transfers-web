@@ -13,11 +13,6 @@
   src: url("./fonts/Lato-Regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url(".fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +20,7 @@
 }
 
 body {
-  font-family: "Inter", "Lato", Arial, sans-serif;
+  font-family: "Open Sans", "Lato", Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -161,7 +156,62 @@ section {
 
 .menu li a {
   text-decoration: none;
+  color: #8f8e8e;
+}
+
+.menu li a:hover {
   color: #333;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-item div {
+  padding: 5px;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  margin: 10px;
+}
+
+.carousel {
+  height: 200px;
+  display: flex;
+  width: 300px;
+  animation: carouselAnimation 20s infinite;
+}
+
+@keyframes carouselAnimation {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-320px);
+  }
+  50%,
+  70% {
+    transform: translateX(-640px);
+  }
+  75%,
+  95% {
+    transform: translateX(-960px);
+  }
+  100% {
+    transform: translateX(-1280px);
+  }
 }
 
 @media screen and (max-width: 768px) {
