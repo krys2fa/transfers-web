@@ -42,38 +42,45 @@ if (carousel) {
   carousel.addEventListener("mouseleave", startCarouselTimer);
 }
 
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
-const menuLinks = document.querySelectorAll(".menu a");
-const sections = document.querySelectorAll(".section");
+// const hamburger = document.querySelector(".hamburger");
+// const menu = document.querySelector(".menu");
+// const menuLinks = document.querySelectorAll(".menu a");
+// const sections = document.querySelectorAll(".section");
 
-function toggleMenu() {
-  hamburger.classList.toggle("active");
-  menu.classList.toggle("active");
-}
+// function toggleMenu() {
+//   hamburger.classList.toggle("active");
+//   menu.classList.toggle("active");
+// }
 
-function closeMenu() {
-  hamburger.classList.remove("active");
-  menu.classList.remove("active");
-}
+// function closeMenu() {
+//   hamburger.classList.remove("active");
+//   menu.classList.remove("active");
+// }
 
-function scrollToSection(e) {
-  e.preventDefault();
-  closeMenu();
-  const targetId = e.target.getAttribute("href");
-  const targetSection = document.querySelector(targetId);
-  if (targetSection) {
-    window.scrollTo({
-      top: targetSection.offsetTop,
-      behavior: "smooth",
-    });
-  }
-}
+// function scrollToSection(e) {
+//   e.preventDefault();
+//   closeMenu();
+//   const targetId = e.target.getAttribute("href");
+//   const targetSection = document.querySelector(targetId);
+//   if (targetSection) {
+//     window.scrollTo({
+//       top: targetSection.offsetTop,
+//       behavior: "smooth",
+//     });
+//   }
+// }
 
-hamburger.addEventListener("click", toggleMenu);
-menuLinks.forEach((link) => {
-  link.addEventListener("click", scrollToSection);
-});
-sections.forEach((section) => {
-  section.addEventListener("click", closeMenu);
+// hamburger.addEventListener("click", toggleMenu);
+// menuLinks.forEach((link) => {
+//   link.addEventListener("click", scrollToSection);
+// });
+// sections.forEach((section) => {
+//   section.addEventListener("click", closeMenu);
+// });
+
+var hamburgerMenu = document.querySelector(".hamburger-menu");
+var menu = document.querySelector(".menu");
+
+hamburgerMenu.addEventListener("click", function () {
+  menu.classList.toggle("open");
 });
