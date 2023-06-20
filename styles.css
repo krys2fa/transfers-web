@@ -43,7 +43,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Lato", Arial, Helvetica, sans-serif;
   margin: 20px auto;
 }
 
@@ -306,7 +306,7 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .logo,
   .menu {
     display: none;
@@ -322,5 +322,130 @@ section {
     align-items: center;
     background-color: #808080;
     width: 100vw;
+  }
+} */
+
+@media screen and (max-width: 1023px) {
+  .menu,
+  .nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #808080;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .menu,
+  header {
+    display: none;
+  }
+
+  .head {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 130px;
+  }
+
+  .news {
+    justify-content: left;
+    align-items: left;
+    margin: 0px;
+  }
+
+  section {
+    width: 65vw;
+    margin-left: auto;
+  }
+
+  .carousel-container {
+    width: 50vw;
+  }
+
+  .nav {
+    position: fixed;
+    height: 100vh;
+    margin: 20px;
+    display: flex;
+    left: 35px;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav ul.second-column {
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .nav ul.first-column {
+    text-align: right;
+  }
+
+  .nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav ul li a {
+    color: rgb(143, 142, 142);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 100;
+  }
+
+  .nav ul li a:hover {
+    color: #0f0f0f;
+  }
+
+  .active {
+    color: #0f0f0f;
+  }
+
+  .carousel-item {
+    flex: 0 0 650px;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .carousel-container {
+    width: 700px;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+  }
+
+  @keyframes carouselAnimation {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-650px);
+    }
+    50%,
+    70% {
+      transform: translateX(-1300px);
+    }
+    75%,
+    95% {
+      transform: translateX(-1950px);
+    }
+    100% {
+      transform: translateX(-2600px);
+    }
   }
 }
