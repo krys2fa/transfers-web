@@ -56,9 +56,6 @@ section {
   display: flex;
 }
 
-.social {
-}
-
 .news {
   flex-direction: column;
 }
@@ -305,25 +302,6 @@ section {
     transform: translateX(-1280px);
   }
 }
-
-/* @media screen and (max-width: 768px) {
-  .logo,
-  .menu {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  .menu.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #808080;
-    width: 100vw;
-  }
-} */
 
 @media screen and (max-width: 1023px) {
   .menu,
