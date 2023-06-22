@@ -456,3 +456,22 @@ section {
     }
   }
 }
+
+@media screen and (min-width: 1439px) {
+  section {
+    margin-right: 100px;
+  }
+
+  .mapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  .box {
+    flex: 1;
+  }
+
+  .map {
+    margin-left: 20px;
+  }
+}
