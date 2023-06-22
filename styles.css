@@ -496,4 +496,12 @@ section {
   .nav {
     left: 330px;
   }
+
+  .head {
+    margin-left: 150px;
+  }
+
+  .carousel-container {
+    width: 1650px;
+  }
 }
