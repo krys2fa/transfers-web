@@ -474,4 +474,14 @@ section {
   .map {
     margin-left: 20px;
   }
+
+  .banner {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+  .nav {
+    left: 330px;
+  }
 }
