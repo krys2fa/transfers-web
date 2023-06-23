@@ -79,6 +79,13 @@ section {
 
 .place {
   padding: 10px;
+  display: flex;
+}
+
+.role {
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 100;
 }
 
 .uk-icon-button {
@@ -198,7 +205,7 @@ section {
 
 .sectionhead {
   color: #333;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-size: 20px;
 }
 
@@ -353,7 +360,7 @@ section {
     height: 100vh;
     margin: 20px;
     display: flex;
-    left: 35px;
+    left: 15px;
   }
 
   .nav ul {
