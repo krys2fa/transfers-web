@@ -56,10 +56,6 @@ navLinks.forEach((link) => {
 function scrollToSection(e) {
   e.preventDefault();
   const targetId = this.getAttribute("href");
-  console.log(
-    "🚀 ~ file: script.js:59 ~ scrollToSection ~ targetId:",
-    targetId
-  );
 
   if (targetId.startsWith("#")) {
     const targetSection = document.querySelector(targetId);
