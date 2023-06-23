@@ -179,6 +179,10 @@ section {
   text-align: justify;
 }
 
+.eventimg {
+  width: 20px;
+}
+
 .pcolor {
   color: #8f8e8e;
 }
