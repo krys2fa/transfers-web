@@ -187,8 +187,10 @@ section {
   width: 20px;
 }
 
-.profileimg {
-  width: 15px;
+.active-link {
+  /* Define the styles for the active link */
+  color: red;
+  /* Add any additional styles as needed */
 }
 
 .pcolor {
@@ -338,6 +340,11 @@ section {
     align-items: center;
     background-color: #808080;
     width: 100vw;
+  }
+
+  .map img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
