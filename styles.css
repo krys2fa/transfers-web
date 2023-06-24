@@ -459,6 +459,11 @@ section {
       transform: translateX(-2600px);
     }
   }
+
+  .map img {
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 @media screen and (min-width: 1439px) {
@@ -493,6 +498,11 @@ section {
 
   .social {
     margin-right: 115px;
+  }
+
+  .map img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
