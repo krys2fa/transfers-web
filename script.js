@@ -104,3 +104,32 @@ Math.easeInOutQuad = function (t, b, c, d) {
   t--;
   return (-c / 2) * (t * (t - 2) - 1) + b;
 };
+
+// Get the current scroll position
+const scrollPosition = window.pageYOffset;
+
+// Loop through each section
+document.querySelectorAll("section").forEach(function (section) {
+  // Get the ID of the section
+  const sectionId = section.getAttribute("id");
+
+  // Get the corresponding navigation link
+  const navLink = document.querySelector(`nav ul li a[href="#${sectionId}"]`);
+
+  // Get the offset top position of the section
+  const sectionOffsetTop = section.offsetTop;
+  // Get the height of the section
+  const sectionHeight = section.offsetHeight;
+
+  // Check if the current scroll position is within the section
+  if (
+    scrollPosition >= sectionOffsetTop &&
+    scrollPosition < sectionOffsetTop + sectionHeight
+  ) {
+    // Add the active class to the navigation link
+    navLink.classList.add("active-link");
+  } else {
+    // Remove the active class from the navigation link
+    navLink.classList.remove("active-link");
+  }
+});
