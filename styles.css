@@ -60,6 +60,12 @@ section {
   flex-direction: column;
 }
 
+main {
+  background-image: url("./img/bg.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+}
+
 .osnabruck,
 .tamale {
   font-family: "Open Sans", Arial, sans-serif;
