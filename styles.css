@@ -85,7 +85,7 @@ h2 {
   text-align: center;
 }
 
-#menu {
+.menu {
   position: absolute;
   top: 50%;
   left: 0;
@@ -94,18 +94,18 @@ h2 {
   padding: 0;
 }
 
-#menu li {
+.menu li {
   margin-bottom: 30px;
   margin-left: 30px;
 }
 
-#menu li a {
+.menu li a {
   color: #000;
   text-decoration: none;
   padding: 10px;
 }
 
-#menu li a:hover {
+.menu li a:hover {
   color: #fff;
 }
 
@@ -167,4 +167,9 @@ h2 {
 
 .bold {
   font-family: "Barlow Medium", Arial, Helvetica, sans-serif;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
 }

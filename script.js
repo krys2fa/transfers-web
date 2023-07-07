@@ -1,14 +1,9 @@
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const menu = document.querySelector(".menu");
-const menuLinks = document.querySelectorAll(".menu a");
-const navLinks = document.querySelectorAll(".nav ul li a");
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".menu li a");
 
-hamburgerMenu.addEventListener("click", function () {
-  menu.classList.toggle("open");
-});
-
-menuLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    menu.classList.toggle("open");
+  links.forEach(function (link) {
+    if (link.href === window.location.href) {
+      link.style.color = "#fff";
+    }
   });
 });
