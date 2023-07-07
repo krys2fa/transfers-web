@@ -59,12 +59,12 @@ body {
 
 .about {
   display: flex;
-  background-color: #ceccd1;
+  background-color: #afc4dc;
   height: 100%;
 }
 
 .sidebar {
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   /* width: 40%; */
   width: 180rem;
 }
@@ -148,7 +148,8 @@ h2 {
 }
 
 .pcolor {
-  color: #8f8e8e;
+  /* color: #8f8e8e; */
+  color: #000;
 }
 
 .eventdiv {
