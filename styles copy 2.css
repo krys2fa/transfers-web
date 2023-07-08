@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Barlow Bold";
+  src: url("./fonts/Barlow-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Light";
+  src: url("./fonts/Barlow-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Medium";
+  src: url("./fonts/Barlow-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("./fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Barlow Bold", Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  background-image: url("./img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home h1 {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+}
+
+.home h2 {
+  position: absolute;
+  top: 58%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.home h2,
+.about h3 {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.about {
+  display: flex;
+  background-color: #afc4dc;
+  height: 100%;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 80rem;
+}
+
+.content {
+  margin-right: 15px;
+  padding: 20px;
+}
+
+.content p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover {
+  color: #fff;
+}
+
+.theme {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.rouge {
+  background-color: #f7ab68;
+}
+
+.blue {
+  background-color: #7bbfee;
+}
+
+.rouge:hover,
+.blue:hover {
+  cursor: pointer;
+}
+
+.text {
+  margin: 20px 10px;
+  text-align: justify;
+  font-family: "Barlow Light", Arial, Helvetica, sans-serif;
+}
+
+.role {
+  letter-spacing: 5px;
+  font-family: "Barlow Light", Arial, Helvetica, sans-serif;
+}
+
+.sectionhead {
+  margin: 10px 0px;
+  font-family: "Barlow Medium", Arial, Helvetica, sans-serif;
+}
+
+.eventimg {
+  width: 20px;
+}
+
+.pcolor {
+  color: #000;
+}
+
+.eventdiv {
+  margin: 15px 20px;
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+
+.event {
+  background-color: #8d8893;
+  padding: 5px;
+  margin: 15px 20px;
+  color: #fff;
+}
+
+.bold {
+  font-family: "Barlow Medium", Arial, Helvetica, sans-serif;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 69%;
+  gap: 10px;
+}
+
+#theme a {
+  padding: 0px;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .menu {
+    left: 3%;
+  }
+
+  .grid-container {
+    grid-template-columns: 27% 72%;
+  }
+
+  /* element.style {
+    margin-right: 60px;
+} */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #theme a {
+    font-size: 1.6rem;
+  }
+
+  .theme {
+    font-size: 1.45rem;
+  }
+}

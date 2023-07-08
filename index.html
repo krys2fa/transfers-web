@@ -3,59 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <title>Transfer(s)</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <main>
-      <!-- <header>
-        <nav>
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <ul class="menu">
-            <li><a href="#news">News</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#sites">Sites</a></li>
-            <li><a href="#materials">Materials</a></li>
-            <li><a href="#mediation">Mediation</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="profiles.html">Profiles</a></li>
-            <li><a href="#notice">Site Notice</a></li>
-            <li><a href="#privacy">Privacy Notice</a></li>
-          </ul>
-        </nav>
-      </header> -->
-
-      <div class="home">
-        <h1>TRANSFER(S)</h1>
-        <h2>Curated by Kwasi Ohene-Ayeh and Bettina Klein</h2>
-        <ul class="menu">
-          <li id="theme"><a href="index.html">Ibrahim Mahama</a></li>
-          <li class="theme">09.07.23 - 01.10.23</li>
-          <!-- <li><a href="#">News</a></li> -->
-          <li><a href="about.html">About</a></li>
-          <li>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top d-md-none"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ibrahim Mahama</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
             <a
-              href="https://docs.google.com/document/d/19nt5NKHgZXth9_UcrSyC3x6Xi4w84YrV/edit?usp=sharing&ouid=104401593617164749151&rtpof=true&sd=true"
+              class="nav-link"
+              href="https://drive.google.com/file/d/1ueOys1UeoJH1LseTCxN8y6wNyn3E1Rg8/view?usp=sharing"
               target="_blank"
               >Curatorial Statement</a
             >
           </li>
-
-          <li>
-            <a href="osnabruk.html">Osnabrück</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Osnabrück</a>
           </li>
-          <li><a href="#">Tamale</a></li>
-          <!-- <li><a href="#">Gallery</a></li> -->
-          <li><a href="#">Credits</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tamale</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Credits</a>
+          </li>
         </ul>
       </div>
-    </main>
+    </nav>
 
-    <script src="script.js"></script>
+    <div class="home">
+      <!-- Sidebar -->
+      <div class="sidebar d-none d-md-block">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link theme" href="#">Ibrahim Mahama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link theme" href="#">09.07.23 - 01.10.23</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link"
+              href="https://drive.google.com/file/d/1ueOys1UeoJH1LseTCxN8y6wNyn3E1Rg8/view?usp=sharing"
+              target="_blank"
+              >Curatorial Statement</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#">Osnabrück</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#">Tamale</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link link" href="#">Credits</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <div class="centered-text">
+          <h1>TRANSFER(S)</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Responsive Sidebar</title>
+    <style>
+      /* Custom styles for the sidebar and content */
+      body {
+        padding-top: 50px;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 30px;
+        background-color: #f8f9fa;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .content {
+          margin-left: 250px;
+        }
+
+        .sidebar {
+          display: block !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top d-md-none"
+    >
+      <a class="navbar-brand" href="#">Website</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar d-none d-md-block">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">Section 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Section 3</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of section 1.</p>
+      </section>
+
+      <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of section 2.</p>
+      </section>
+
+      <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content of section 3.</p>
+      </section>
+    </div>
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar-toggler").on("click", function () {
+          $(".sidebar").toggleClass("d-none");
+        });
+      });
+    </script>
+  </body>
+</html>
