@@ -44,7 +44,8 @@ body {
   padding: 20px;
 }
 
-.home {
+.home,
+.about {
   background-image: url("./img/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -76,6 +77,37 @@ body {
   font-size: 1.5rem;
 }
 
+.about-title {
+  margin-top: 70px;
+  font-size: 1.3rem;
+}
+
+.text {
+  color: #fff;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.profile-title {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.profile-title h2 {
+  font-size: 1.3rem;
+}
+
+.role {
+  letter-spacing: 5px;
+  font-family: "Barlow Light", Arial, Helvetica, sans-serif;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0px;
+}
+
 @media (min-width: 768px) {
   .content {
     margin-left: 250px;
@@ -83,5 +115,21 @@ body {
 
   .sidebar {
     display: block !important;
+  }
+
+  .about-title,
+  .profile-title h2 {
+    font-size: 2rem;
+  }
+
+  .role,
+  .sectionhead {
+    font-size: 1.3rem;
+  }
+
+  .bio {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
   }
 }
