@@ -133,6 +133,10 @@ body {
   font-family: "Barlow Medium", Arial, Helvetica, sans-serif;
 }
 
+.header {
+  font-size: 1.3rem;
+}
+
 @media (min-width: 768px) {
   .content {
     margin-left: 250px;
