@@ -44,11 +44,15 @@ body {
   padding: 20px;
 }
 
-.home,
-.about {
+.home {
   background-image: url("./img/bg.jpg");
   background-size: cover;
   background-position: center;
+  height: 100vh;
+}
+
+.bg {
+  background-color: #b8cce0;
   height: 100vh;
 }
 
@@ -83,7 +87,7 @@ body {
 }
 
 .text {
-  color: #fff;
+  color: #000;
   text-align: justify;
   margin-top: 30px;
 }
