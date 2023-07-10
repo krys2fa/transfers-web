@@ -7,10 +7,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-$(document).ready(function () {
-  $(".clickable-image").on("click", function () {
-    var imageSrc = $(this).data("image-src");
-    $("#imageModal").find(".maximized-image").attr("src", imageSrc);
-  });
-});
