@@ -7,3 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+$(document).ready(function () {
+  $(".img").click(function () {
+    $("#modal-img").attr("src", this.src);
+    $("#imageModal").modal("show");
+  });
+});
