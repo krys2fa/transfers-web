@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html refix="og: https://ogp.me/ns#" lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RY1VFFXPHD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RY1VFFXPHD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RY1VFFXPHD');
-</script>
+      gtag("config", "G-RY1VFFXPHD");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,21 +22,25 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://transfer-s.org/about.html" />
     <meta property="og:image" content="https://transfer-s.org/img/bg.jpg" />
-    <meta property="og:image:secure" content="https://transfer-s.org/img/bg.jpg" />
-    <meta property="og:image:width" content="400" /> 
+    <meta
+      property="og:image:secure"
+      content="https://transfer-s.org/img/bg.jpg"
+    />
+    <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:description" content="Opening on 8th July, 2023, at
+    <meta
+      property="og:description"
+      content="Opening on 8th July, 2023, at
      Kunsthalle Osnabrück at 4pm. The installation will be sited at the former Galeria Kaufhof 
      building in Osnabrück(DE) and runs through 1 October,2023. The discursive programme will 
-     take place in Tamale(GH) in November 2023." />
+     take place in Tamale(GH) in November 2023."
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <title>Transfer(s)</title>
     <link rel="stylesheet" href="./styles.css" />
-
-    
   </head>
 
   <body>
@@ -74,6 +82,9 @@
             <li class="nav-item">
               <a class="nav-link" href="tamale.html">Tamale</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
@@ -111,6 +122,9 @@
             <li class="nav-item">
               <a class="nav-link link" href="tamale.html">Tamale</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="team.html">Team</a>
+            </li>
             <!-- <li class="nav-item">
               <a class="nav-link link" href="gallery.html">Gallery</a>
             </li>
@@ -146,7 +160,10 @@
 
             <div class="text-center">
               <img src="./img/curators.jpeg" alt="" class="mx-auto img-fluid" />
-              <div class="small">Left: Ibrahim Mahama, middle: Bettina Klein, right: Kwasi Ohene, photo by Angela von Brill</div>
+              <div class="small">
+                Left: Ibrahim Mahama, middle: Bettina Klein, right: Kwasi Ohene,
+                photo by Angela von Brill
+              </div>
             </div>
 
             <div class="text">
@@ -291,16 +308,33 @@
 
             <!-- Pics  -->
 
-            <div class="mb-5">
+            <div class="text-center mb-3">
+              <img src="./img/about1.jpg" alt="" class="mx-auto img-fluid" />
+              <div class="small">
+                From left to right: Juliane Schickedanz/Anna Jehle (Directors
+                Kunsthalle Osnabrück), Ibrahim Mahama (Artist), Wolfgang
+                Beckermann (First city councilor in the city of Osnabrück),
+                Patricia Mersinger (Head of Cultural Office City of Osnabrück),
+                Bettina Klein/Kwasi Ohene-Ayeh (Curators), photo by Friso
+                Gentsch
+              </div>
+            </div>
+
+            <!-- <div class="mb-5">
               <div class="row">
                 <div
-                  class="col-md-4 d-flex justify-content-center align-items-center mb-2"
+                  class="col-md-6 d-flex justify-content-center align-items-center mb-2"
                 >
-                  <img class="img img-fluid" src="./img/about1.jpg" alt="" />
+                  <img
+                    class="img img-fluid"
+                    src="./img/about1.jpg"
+                    alt="Team Kunsthalle Osnabrück with artist Ibrahim Mahama, curators Bettina Klein and Kwasi Ohene-Ayeh and collaborators, photo by Friso Gentsch. 
+                  "
+                  />
                 </div>
 
                 <div
-                  class="col-md-4 d-flex justify-content-center align-items-center mb-2"
+                  class="col-md-6 d-flex justify-content-center align-items-center mb-2"
                 >
                   <img class="img img-fluid" src="./img/about3.jpg" alt="" />
                 </div>
@@ -312,7 +346,7 @@
                 </div>
               </div>
               <div class="text-center"><p>Photos by Friso Gentsch</p></div>
-            </div>
+            </div> -->
 
             <!-- End of Pics  -->
 
