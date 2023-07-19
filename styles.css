@@ -151,7 +151,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200px;
+  width: 130px;
 }
 
 @media (min-width: 768px) {
@@ -180,5 +180,6 @@ body {
 
   .bottom-left {
     left: 50px;
+    width: 200px;
   }
 }
