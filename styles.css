@@ -177,4 +177,8 @@ body {
     flex-basis: 20%;
     max-width: 20%;
   }
+
+  .bottom-left {
+    left: 50px;
+  }
 }
