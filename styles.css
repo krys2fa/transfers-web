@@ -154,6 +154,10 @@ body {
   width: 130px;
 }
 
+.h3-height {
+  height: 70px;
+}
+
 iframe {
   border: 2px solid #333;
   border-radius: 10px;
