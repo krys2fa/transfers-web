@@ -161,6 +161,10 @@ iframe {
   display: block;
 }
 
+.videos-container {
+  max-width: 800px;
+}
+
 @media (min-width: 768px) {
   .content {
     margin-left: 250px;
@@ -188,5 +192,17 @@ iframe {
   .bottom-left {
     left: 50px;
     width: 200px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .videos-container {
+    max-width: 1800px;
+  }
+}
+
+@media ((min-width: 1024px) and (max-width:1439px)) {
+  .videos-container {
+    max-width: 600px;
   }
 }
