@@ -20,7 +20,7 @@ function displayImages() {
   var gallery = document.getElementById("img-container");
 
   // Path to the folder containing images
-  var folderPath = "./img/tamale/";
+  var folderPath = "/img/tamale/";
 
   // Fetch the list of images from the folder
   fetchImages(folderPath)
