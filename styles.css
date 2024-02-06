@@ -217,3 +217,10 @@ iframe {
     max-width: 600px;
   }
 } */
+
+@media (min-width: 1440px) {
+  .hugepic {
+    height: 220px;
+    width: 220px;
+  }
+}
